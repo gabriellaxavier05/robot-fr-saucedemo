@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-12T17:00:43.245570" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\Autodidata\Testes - QA\Testes realizados\Automacao\Robot Framework\robot-fr-saucedemo\login.robot">
+<test id="s1-t1" name="Login com sucesso no SauceDemo" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-12T17:00:43.883297" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-12T17:00:43.882586" elapsed="7.492663"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-12T17:00:51.413983" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T17:00:51.413149" elapsed="0.484963"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-12T17:00:51.899727" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T17:00:51.899320" elapsed="0.148599"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-12T17:00:52.048873" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T17:00:52.048520" elapsed="0.208363"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-12T17:01:02.258519" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-12T17:00:52.257499" elapsed="10.001220"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-12T17:01:02.259330" elapsed="3.551085"/>
+</kw>
+<doc>Teste de login com sucesso no SauceDemo</doc>
+<status status="PASS" start="2025-05-12T17:00:43.881092" elapsed="21.929893"/>
+</test>
+<status status="PASS" start="2025-05-12T17:00:43.248303" elapsed="22.563726"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
