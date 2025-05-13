@@ -1,54 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-12T17:25:12.059314" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-13T02:33:02.788621" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\Autodidata\Testes - QA\Testes realizados\Automacao\Robot Framework\robot-fr-saucedemo\login.robot">
 <test id="s1-t1" name="Login com sucesso no SauceDemo" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-12T17:25:12.491017" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-05-13T02:33:03.500568" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-12T17:25:12.490634" elapsed="2.851907"/>
+<status status="PASS" start="2025-05-13T02:33:03.500078" elapsed="2.938745"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-12T17:25:15.353491" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2025-05-13T02:33:06.458119" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-12T17:25:15.352744" elapsed="0.420169"/>
+<status status="PASS" start="2025-05-13T02:33:06.457295" elapsed="0.324084"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-12T17:25:15.781716" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2025-05-13T02:33:06.827026" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-12T17:25:15.781286" elapsed="0.147473"/>
+<status status="PASS" start="2025-05-13T02:33:06.826554" elapsed="0.257269"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-12T17:25:15.929566" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-13T02:33:07.090969" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-12T17:25:15.929228" elapsed="0.206054"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath=//span[text()='Products']</arg>
-<arg>timeout=20s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-12T17:25:16.177104" elapsed="0.099026"/>
+<status status="PASS" start="2025-05-13T02:33:07.090469" elapsed="0.254988"/>
 </kw>
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-05-12T17:25:16.295588" level="INFO">Current page contains element 'xpath=//span[text()='Products']'.</msg>
+<msg time="2025-05-13T02:33:07.366666" level="INFO">Current page contains element 'xpath=//span[text()='Products']'.</msg>
 <arg>xpath=//span[text()='Products']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-05-12T17:25:16.277772" elapsed="0.017978"/>
+<status status="PASS" start="2025-05-13T02:33:07.346485" elapsed="0.020336"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-12T17:25:16.296395" elapsed="2.259144"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-13T02:33:37.369345" level="INFO">Slept 30 seconds.</msg>
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-13T02:33:07.367603" elapsed="30.001991"/>
 </kw>
 <doc>Teste de login com sucesso no SauceDemo</doc>
-<status status="PASS" start="2025-05-12T17:25:12.487818" elapsed="6.068124"/>
+<status status="PASS" start="2025-05-13T02:33:03.498100" elapsed="33.872081"/>
 </test>
-<status status="PASS" start="2025-05-12T17:25:12.061620" elapsed="6.495793"/>
+<status status="PASS" start="2025-05-13T02:33:02.792329" elapsed="34.579180"/>
 </suite>
 <statistics>
 <total>
