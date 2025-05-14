@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-13T02:33:02.788621" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="C:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\Autodidata\Testes - QA\Testes realizados\Automacao\Robot Framework\robot-fr-saucedemo\login.robot">
-<test id="s1-t1" name="Login com sucesso no SauceDemo" line="11">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-14T18:27:06.565208" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\LumeStack\Mentoria Guardião da Qualidade PRO\Exercicios\Mod 15 - Robot Framework\robot-fr-saucedemo\login.robot">
+<test id="s1-t1" name="Login com sucesso" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-13T02:33:03.500568" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
+<msg time="2025-05-14T18:27:07.016102" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>url=https://www.saucedemo.com/</arg>
+<arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-13T02:33:03.500078" elapsed="2.938745"/>
+<status status="PASS" start="2025-05-14T18:27:07.015538" elapsed="2.595365"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-13T02:33:06.458119" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=user-name</arg>
-<arg>${USER}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-13T02:33:06.457295" elapsed="0.324084"/>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-14T18:27:09.611378" elapsed="0.067250"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-13T02:33:06.827026" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<arg>id=password</arg>
-<arg>${SENHA}</arg>
+<msg time="2025-05-14T18:27:09.683148" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-13T02:33:06.826554" elapsed="0.257269"/>
+<status status="PASS" start="2025-05-14T18:27:09.682579" elapsed="0.268273"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-14T18:27:09.958602" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-14T18:27:09.958176" elapsed="0.190613"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-13T02:33:07.090969" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-14T18:27:10.149691" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-13T02:33:07.090469" elapsed="0.254988"/>
+<status status="PASS" start="2025-05-14T18:27:10.149314" elapsed="0.229937"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-05-13T02:33:07.366666" level="INFO">Current page contains element 'xpath=//span[text()='Products']'.</msg>
-<arg>xpath=//span[text()='Products']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-05-13T02:33:07.346485" elapsed="0.020336"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-13T02:33:37.369345" level="INFO">Slept 30 seconds.</msg>
-<arg>30s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-13T02:33:07.367603" elapsed="30.001991"/>
-</kw>
-<doc>Teste de login com sucesso no SauceDemo</doc>
-<status status="PASS" start="2025-05-13T02:33:03.498100" elapsed="33.872081"/>
+<status status="PASS" start="2025-05-14T18:27:07.012914" elapsed="3.366936"/>
 </test>
-<status status="PASS" start="2025-05-13T02:33:02.792329" elapsed="34.579180"/>
+<status status="PASS" start="2025-05-14T18:27:06.567189" elapsed="3.814427"/>
 </suite>
 <statistics>
 <total>
