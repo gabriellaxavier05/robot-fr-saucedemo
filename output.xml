@@ -1,48 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-14T19:59:03.231811" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="c:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\LumeStack\Mentoria Guardião da Qualidade PRO\Exercicios\Mod 15 - Robot Framework\robot-fr-saucedemo\login.robot">
-<test id="s1-t1" name="Falha login - credenciais inválidas" line="32">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-28T23:27:00.916930" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="c:\Users\gabri\OneDrive\Documentos\Estudos\Cursos\LumeStack\Mentoria Guardião da Qualidade PRO\Exercicios\Mod15 - Robot Framework\robot-fr-saucedemo\login.robot">
+<test id="s1-t1" name="Login com sucesso" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-14T19:59:03.884281" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<arg>url=https://www.saucedemo.com/</arg>
-<arg>browser=Chrome</arg>
+<msg time="2025-05-28T23:27:02.283314" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-14T19:59:03.883523" elapsed="3.027760"/>
+<status status="PASS" start="2025-05-28T23:27:02.280953" elapsed="4.094949"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=user-name</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-14T19:59:06.915576" elapsed="0.129523"/>
+<status status="PASS" start="2025-05-28T23:27:06.394781" elapsed="0.230949"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-14T19:59:07.049738" level="INFO">Typing text 'usuario1' into text field 'id=user-name'.</msg>
+<msg time="2025-05-28T23:27:06.654248" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
-<arg>usuario1</arg>
+<arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-14T19:59:07.049084" elapsed="0.308759"/>
+<status status="PASS" start="2025-05-28T23:27:06.653555" elapsed="0.311279"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-14T19:59:07.372586" level="INFO">Typing text 'senha123' into text field 'id=password'.</msg>
+<msg time="2025-05-28T23:27:06.970428" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
-<arg>senha123</arg>
+<arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-14T19:59:07.371790" elapsed="0.169672"/>
+<status status="PASS" start="2025-05-28T23:27:06.969622" elapsed="0.208625"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-14T19:59:07.543298" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2025-05-28T23:27:07.205930" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-14T19:59:07.542615" elapsed="0.183996"/>
+<status status="PASS" start="2025-05-28T23:27:07.205286" elapsed="0.275174"/>
 </kw>
-<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
-<arg>class=error-message-container</arg>
-<arg>text=Epic sadface: Username and password do not match any user in this service</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-05-14T19:59:07.729331" elapsed="0.062586"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-05-28T23:27:07.774114" level="INFO">${location} = https://www.saucedemo.com/inventory.html</msg>
+<var>${location}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-05-28T23:27:07.655600" elapsed="0.118945"/>
 </kw>
-<status status="PASS" start="2025-05-14T19:59:03.881203" elapsed="3.911650"/>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${location}</arg>
+<arg>https://www.saucedemo.com/inventory.html</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-05-28T23:27:07.799155" elapsed="0.000729"/>
+</kw>
+<status status="PASS" start="2025-05-28T23:27:02.272660" elapsed="5.540048"/>
 </test>
-<status status="PASS" start="2025-05-14T19:59:03.248343" elapsed="4.550803"/>
+<status status="PASS" start="2025-05-28T23:27:00.927664" elapsed="6.888725"/>
 </suite>
 <statistics>
 <total>
